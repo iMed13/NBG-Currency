@@ -1,0 +1,36 @@
+.notifier__container {
+
+  $root: &;
+  #{$root}-list {
+    .notifier__notification--material {
+      will-change: unset;
+      border-radius: 5px;
+      box-shadow: none;
+      padding: 15px !important;
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      .notifier__notification {
+        &-message {
+          font-size: 14px;
+          color: white;
+          margin: unset;
+        }
+        &-button {
+          display: none;
+          opacity: 0;
+        }
+      }
+
+      &.notifier__notification--error {
+        background-color: #f11a5e;
+      }
+      &.notifier__notification--success {
+        background-color: green;
+      }
+    }
+  }
+}

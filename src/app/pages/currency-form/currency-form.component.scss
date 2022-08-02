@@ -1,0 +1,27 @@
+.currency {
+  &-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+      background-color: #ffffff;
+      border-radius: 5px;
+      width: 500px;
+      margin-top: 50px;
+      padding: 15px;
+
+      .form-group {
+        padding-bottom: 10px;
+
+        label {
+          font-weight: bold;
+          padding-bottom: 2px;
+        }
+      }
+    }
+  }
+
+}
